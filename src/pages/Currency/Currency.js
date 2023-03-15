@@ -69,12 +69,12 @@ function Currency() {
     return (
         <div>
             <div>
-                <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                <h1>
                     Any <span style={{ color: 'red', fontWeight: 'bold' }}>
                         {/* Style will be inherited from the parent element */}
                         <Typewriter
                             words={['Currency', 'Time']}
-                            loop={1}
+                            loop={Infinity}
                             cursor
                             cursorStyle=''
                             typeSpeed={70}

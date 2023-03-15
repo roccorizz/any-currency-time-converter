@@ -10,6 +10,17 @@ h1{
 color: #eef;
 text-align: center;
 font-family:poppins;
+padding: 2rem 1rem;
+margin: auto 0;
+font-weight:normal;
+font-size: 30px;
+}
+.main{
+  border: 5px solid red;
+  margin:-3% 32% 30% 32%;
+  padding-bottom: 6px;
+  border-radius: 30px;
+
 }
 .group{
   background: #335;
@@ -37,23 +48,22 @@ select{
  
 }
 option{
-  background-color: #335;
+  background-color: red;
+  
 }
+
 .time{
   width: 300px;
   margin: 0 auto;
 }
 .btn{
   margin: 10px 0px;
-  padding: 5px 5px;
+  padding: 7px 10px;
   color: whitesmoke;
   background-color: red;
+
   border-radius: 10px;
   border: 0;
-
-}
-.main{
-  border: 5px solid red;
-  margin: 0px;
-  padding: 20px;
+  
+  justify-content: center;
 }
