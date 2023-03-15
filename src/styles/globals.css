@@ -40,5 +40,20 @@ option{
   background-color: #335;
 }
 .time{
-  width: 200px;
+  width: 300px;
+  margin: 0 auto;
+}
+.btn{
+  margin: 10px 0px;
+  padding: 5px 5px;
+  color: whitesmoke;
+  background-color: red;
+  border-radius: 10px;
+  border: 0;
+
+}
+.main{
+  border: 5px solid red;
+  margin: 0px;
+  padding: 20px;
 }

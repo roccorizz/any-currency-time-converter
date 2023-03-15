@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 import Currency from './Currency/Currency'
 const inter = Inter({ subsets: ['latin'] })
-
+import Timezone from './Time/Time'
 export default function Home() {
 
   return (
@@ -17,7 +17,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Currency />
+        <div className='main'>
+
+          <Currency />
+          <Timezone />
+        </div>
 
       </main>
     </>
