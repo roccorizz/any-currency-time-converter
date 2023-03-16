@@ -44,43 +44,49 @@ function Time() {
     return (
         <div>
             <div className="time">
-                <form onSubmit={handleSubmit}>
-                    <label>
-                        From <br />
-                        <select
-                            value={fromTimezone}
-                            onChange={(event) => setFromTimezone(event.target.value)}
-                        >
-                            {timezones &&
-                                timezones.map((zone) => (
-                                    <option key={zone} value={zone}>
-                                        {zone}
-                                    </option>
-                                ))}
-                        </select>
-                    </label>
-                    <br />
-                    <label>
-                        To <br />
-                        <select
-                            value={toTimezone}
-                            onChange={(event) => setToTimezone(event.target.value)}
-                        >
-                            {timezones &&
-                                timezones.map((zone) => (
-                                    <option key={zone} value={zone}>
-                                        {zone}
-                                    </option>
-                                ))}
-                        </select>
-                    </label>
-                    <br />
-                    <button className="btn" type="submit">
-                        Calculate Time Difference
-                    </button>
-                </form>
+                <div className="timeform">
+
+                    <form onSubmit={handleSubmit}>
+                        <label>
+                            <h3>From</h3>
+                            <select className="timeform-select"
+                                value={fromTimezone}
+                                onChange={(event) => setFromTimezone(event.target.value)}
+                            >
+                                {timezones &&
+                                    timezones.map((zone) => (
+                                        <option key={zone} value={zone}>
+                                            {zone}
+                                        </option>
+                                    ))}
+                            </select>
+                        </label>
+                        <br />
+                        <label>
+                            <h3>To</h3>
+                            <select
+                                value={toTimezone}
+                                onChange={(event) => setToTimezone(event.target.value)}
+                            >
+                                {timezones &&
+                                    timezones.map((zone) => (
+                                        <option key={zone} value={zone}>
+                                            {zone}
+                                        </option>
+                                    ))}
+                            </select>
+                        </label>
+                        <br />
+                        <div className="time-button">
+
+                            <button className="btn" type="submit">
+                                Calculate Time Difference
+                            </button>
+                        </div>
+                    </form>
+                </div>
                 {timeDifference && (
-                    <p>
+                    <p className="time-para">
                         The time difference between {fromTimezone} and {toTimezone} is{" "}
                         {timeDifference}
                     </p>
